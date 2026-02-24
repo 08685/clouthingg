@@ -612,7 +612,138 @@ footer .co1 .follow a {
      }  
 
 /* Give the page bottom padding so content doesn't sit under the fixed copyright */
+/*SHop page responsive design*/
+#page-header {
+    text-align: center;
+    padding: 40px 80px;
+   background-image: url("images/BANNER-MENS-CLOTHING.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
 
+}
+#page-header h1 {
+    font-size: 50px;    
+    color: white;
+    margin-top: 50px;
+}
+#page-header p {
+    font-size: 20px;    
+    color: black;
+    margin-bottom: 20px;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+#pagination a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 8px 12px;
+    border: 1px solid gray;         
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+#pagination a:hover {
+    background-color: gray;
+    color: white;       
+    transform: scale(1.05);
+}
+/* Single product page responsive design */
+#prodetails {
+    display: flex;
+    margin-top: 20px    ;
+}
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+#prodetails .single-pro-details h6 {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details h4 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+#prodetails .single-pro-details p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+#prodetails .single-pro-details .price {
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 20px;
+}
+#prodetails .single-pro-details button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background: linear-gradient(to right, rgb(39, 38, 38), gray);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    transition: all 0.5s ease;
+}
+#prodetails .single-pro-details button:hover {
+    background: linear-gradient(to right, gray, rgb(39, 38, 38));
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}   
+#prodetails .single-pro-details select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;         
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block;
+}   
+#prodetails .single-pro-details select option {
+    padding: 10px;
+    font-size: 16px;
+}
+#prodetails .single-pro-details input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;         
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 200px;
+}
+#prodetails .single-pro-details span {
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+    margin-top: 10px;
+}
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 20px;
+}
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
 
 
 @media (max-width: 799px) {
@@ -832,24 +963,17 @@ footer .co1 .follow a {
     padding: 20px 10px;
 
    }
-   #product1 .pro-container {
-     display: grid;
-     grid-template-columns: repeat(2, 200px);
-     grid-template-rows: repeat(4, 400px);
-     margin-left: -80px;
-     justify-content: center;
-      gap: 20px;
-     
-   }
+  
+   
    #product1 .pro {
-     transform: scale(0.5);
+     
       margin: 0px 0px 0px 0px;
         height: 500px;
      
         
    }
    #product1 .pro:hover {
-    transform: scale(0.55);
+    transform: scale(0.9);
    }
    #product1 .pro .cart {
     padding: 8px;
@@ -870,7 +994,23 @@ footer .co1 .follow a {
     display: block;
     margin-bottom: 15px;
    }
-   
+   #prodetails{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 10px;
+   }
+   #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+    #prodetails .single-pro-details {
+    width: 100%;
+    }
+  #prodetails .single-pro-details input[type="number"] {
+    width: 100px;
+  }
   
 }
 
